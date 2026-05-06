@@ -7,8 +7,8 @@ const TelegramBot = require('node-telegram-bot-api');
 // ===================================================
 // SOZLAMALAR - Bu yerga o'z tokeningizni kiriting
 // ===================================================
-const BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE'; // BotFather dan olingan token
-const MINI_APP_URL = 'https://your-domain.com'; // index.html joylashgan URL
+const BOT_TOKEN = '8445599587:AAHLuJUYhwe_aExsq-PC_gK5WsWUOsxWzjE';
+const MINI_APP_URL = 'https://tokradar.netlify.app';
 // ===================================================
 
 const bot = new TelegramBot(BOT_TOKEN, { polling: true });
@@ -16,14 +16,7 @@ const bot = new TelegramBot(BOT_TOKEN, { polling: true });
 console.log('TokRadar bot ishga tushdi...');
 
 // /start komandasi
-bot.onText(/\/bot.onText(/\/start/, (msg) => {
-  const chatId = msg.chat.id;
-  const firstName = msg.from.first_name || 'Foydalanuvchi';
-
-  // Klaviaturani o'chirish
-  bot.sendMessage(chatId, '...', {
-    reply_markup: { remove_keyboard: true }
-  }).then(() => {/, (msg) => {
+bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
   const firstName = msg.from.first_name || 'Foydalanuvchi';
 

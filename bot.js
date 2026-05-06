@@ -184,3 +184,8 @@ bot.on('message', (msg) => {
 bot.on('polling_error', (err) => {
   console.error('Xato:', err.message);
 });
+const fs = require('fs');
+
+const regions = JSON.parse(
+  fs.readFileSync('./tokradar_uzbekistan_regions.json', 'utf8')
+);

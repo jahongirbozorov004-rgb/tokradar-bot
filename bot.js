@@ -7,8 +7,8 @@ const TelegramBot = require('node-telegram-bot-api');
 // ===================================================
 // SOZLAMALAR - Bu yerga o'z tokeningizni kiriting
 // ===================================================
-const BOT_TOKEN = '8445599587:AAHLuJUYhwe_aExsq-PC_gK5WsWUOsxWzjE';
-const MINI_APP_URL = 'https://tokradar.netlify.app';
+const BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE'; // BotFather dan olingan token
+const MINI_APP_URL = 'https://your-domain.com'; // index.html joylashgan URL
 // ===================================================
 
 const bot = new TelegramBot(BOT_TOKEN, { polling: true });

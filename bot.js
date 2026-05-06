@@ -16,7 +16,14 @@ const bot = new TelegramBot(BOT_TOKEN, { polling: true });
 console.log('TokRadar bot ishga tushdi...');
 
 // /start komandasi
-bot.onText(/\/start/, (msg) => {
+bot.onText(/\/bot.onText(/\/start/, (msg) => {
+  const chatId = msg.chat.id;
+  const firstName = msg.from.first_name || 'Foydalanuvchi';
+
+  // Klaviaturani o'chirish
+  bot.sendMessage(chatId, '...', {
+    reply_markup: { remove_keyboard: true }
+  }).then(() => {/, (msg) => {
   const chatId = msg.chat.id;
   const firstName = msg.from.first_name || 'Foydalanuvchi';
 
